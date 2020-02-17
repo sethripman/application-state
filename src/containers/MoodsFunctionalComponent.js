@@ -5,7 +5,7 @@ import Controls from '../components/controls/Controls';
 import Face from '../components/face/Face';
 import { allActions } from '../actions/faceActions';
 
-const MoodsFn = () => {
+const MoodsFunctionalComponent = () => {
   const [state, dispatch] = useReducer(faceReducer, {
     coffees: 0,
     snacks: 0,
@@ -41,7 +41,7 @@ const MoodsFn = () => {
       func: () => dispatch(study()),
       count: state.studies
     },
-    
+
     {
       text: 'Exercise',
       func: () => dispatch(exercise()),
@@ -58,4 +58,4 @@ const MoodsFn = () => {
   );
 };
 
-export default MoodsFn;
+export default MoodsFunctionalComponent;

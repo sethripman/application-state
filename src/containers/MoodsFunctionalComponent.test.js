@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MoodsFn from './MoodsFn';
+import MoodsFunctionalComponent from './MoodsFunctionalComponent';
 
-describe('MoodsFn', () => {
+describe('MoodsFunctionalComponent', () => {
   it('matches a snapshot', () => {
-    const wrapper = shallow(<MoodsFn />);
+    const wrapper = shallow(<MoodsFunctionalComponent />);
     expect(wrapper).toMatchSnapshot();
   });
 });

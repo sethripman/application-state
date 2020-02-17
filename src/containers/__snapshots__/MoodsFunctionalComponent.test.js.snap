@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MoodsFn matches a snapshot 1`] = `
+exports[`MoodsFunctionalComponent matches a snapshot 1`] = `
 <Fragment>
   <Controls
     dispatch={
