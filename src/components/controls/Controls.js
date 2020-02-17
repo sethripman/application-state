@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Controls.css';
 
-const Controls = ({ actions, handleSelection }) => (
+const Controls = ({ dispatch }) => ( 
   <section className={styles.Controls}>
-    {actions.map(({ name, text, count }) => (
+    {dispatch.map(action => (
       <button key={name} onClick={() => handleSelection(name)}>
         {text || name} {!!count && `- ${count}`}
       </button>
