@@ -23,5 +23,3 @@ export const study = () => ({
 export const exercise = () => ({
   type: EXERCISE
 });
-
-export const faceActions = [drinkCoffee, eatSnack, takeNap, study, exercise];

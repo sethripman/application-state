@@ -3,7 +3,7 @@ import faceReducer from '../reducers/faceReducer';
 import { getFace } from '../selectors/faceSelectors';
 import Controls from '../components/controls/Controls';
 import Face from '../components/face/Face';
-import { allActions } from '../actions/faceActions';
+import { drinkCoffee, eatSnack, takeNap, study, exercise } from '../actions/faceActions';
 
 const MoodsFunctionalComponent = () => {
   const [state, dispatch] = useReducer(faceReducer, {
@@ -15,7 +15,6 @@ const MoodsFunctionalComponent = () => {
   });
 
   const face = getFace(state);
-  const [drinkCoffee, eatSnack, takeNap, study, exercise] = allActions;
 
   const dispatchObject = [
     {
@@ -23,32 +22,28 @@ const MoodsFunctionalComponent = () => {
       func: () => dispatch(drinkCoffee()),
       count: state.coffees
     },
-
     {
       text: 'Snack',
       func: () => dispatch(eatSnack()),
       count: state.snacks
     },
-
     {
       text: 'Nap',
       func: () => dispatch(takeNap()),
       count: state.naps
     },
-
     {
       text: 'Study',
       func: () => dispatch(study()),
       count: state.studies
     },
-
     {
       text: 'Exercise',
       func: () => dispatch(exercise()),
       count: state.exercises
     }
   ];
-
+  
 
   return (
     <>
