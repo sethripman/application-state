@@ -1,8 +1,6 @@
 import React from 'react';
-import Moods from '../containers/Moods';
-
+import MoodsFunctionalComponent from '../containers/MoodsFunctionalComponent';
 
 export default function App() {
-  return <Moods />;
+  return <MoodsFunctionalComponent />;
 }
-
